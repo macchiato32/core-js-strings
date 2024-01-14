@@ -289,9 +289,7 @@ const reverseString = (str) => [...str].reduce((acc, char) => char + acc, '');
  *   orderAlphabetically('textbook') => 'bekoottx'
  *   orderAlphabetically('abc123xyz') => '123abcxyz'
  */
-function orderAlphabetically(/* str */) {
-  throw new Error('Not implemented');
-}
+const orderAlphabetically = (str) => str.split('').sort().join('');
 
 /**
  * Checks if a given string contains a specified substring.

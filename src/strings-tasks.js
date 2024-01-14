@@ -19,12 +19,8 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(value) {
-  if (typeof value !== 'string') {
-    return 0;
-  }
-  return (value || '').length;
-}
+const getStringLength = (value) =>
+  typeof value === 'string' ? value.length : 0;
 
 /**
  * Returns true if the value is a string, otherwise returns false.

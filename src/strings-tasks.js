@@ -276,13 +276,7 @@ function formatTime(minutes, seconds) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(str) {
-  let reversed = '';
-  for (let i = str.length - 1; i >= 0; i -= 1) {
-    reversed += str[i];
-  }
-  return reversed;
-}
+const reverseString = (str) => [...str].reduce((acc, char) => char + acc, '');
 
 /**
  * Returns a string with characters in alphabetical order.
